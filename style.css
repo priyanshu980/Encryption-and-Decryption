@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+    color: #ecf0f1;
+    transition: background-color 0.5s;
+}
+
+.container {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+
+h1 {
+    color: #3498db;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+    color: #3498db;
+}
+
+textarea, input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    transition: border-color 0.5s;
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+button {
+    background-color: #e74c3c;
+    color: #ffffff;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+#result {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #e74c3c;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #e74c3c;
+    background-color: #34495e;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    animation: fadeIn 0.5s ease-in-out;
+}

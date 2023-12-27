@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encryption and Decryption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Container for the entire content -->
+    <div class="container">
+        <!-- Title heading -->
+        <h1>Text Encryption and Decryption</h1>
+
+        <!-- Input area for the text to be encrypted or decrypted -->
+        <label for="plaintext">Enter Text:</label>
+        <textarea id="plaintext" rows="4"></textarea>
+
+        <!-- Input for the shift value -->
+        <label for="shift">Enter Shift (0-25):</label>
+        <input type="number" id="shift" min="0" max="25" value="3">
+
+        <!-- Buttons to trigger encryption and decryption -->
+        <button onclick="runEncryption()">Encrypt</button>
+        <button onclick="runDecryption()">Decrypt</button>
+
+        <!-- Result display area -->
+        <div>
+            <label for="result">Result:</label>
+            <textarea id="result" readonly></textarea>
+        </div>
+    </div>
+
+    <!-- JavaScript file for logic -->
+    <script src="main.js"></script>
+</body>
+</html>
